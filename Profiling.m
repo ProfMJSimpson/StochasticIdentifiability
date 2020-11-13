@@ -5,7 +5,7 @@ p3=0.4;
 P0=[0.2, 0.2, 0.2];
 lb=[0.05, 0.05, 0.05];
 ub=[0.5, 0.5, 0.5];
-MC=50;
+MC=500;
 x01=100;
 x02=60;
 x03=30;
@@ -184,7 +184,7 @@ end
 PP1 = -PP1 - LLmaxa;
 figure;
 subplot(1,3,1)
-contourf(P1,P2,PP1,'LevelList',[-3.00],'Linewidth',2);hold on
+contourf(P1,P2,PP1,'LevelList',[-2.99],'Linewidth',2);hold on
 plot(p2,p1,'go','MarkerFaceColor','g')
 axis image
 xlabel("p2");
@@ -206,7 +206,7 @@ ylabel("p1");
  end
  PP2 = -PP2 - LLmaxa;
  subplot(1,3,2)
- contourf(P2,P3,PP2,'LevelList',[-3.00],'Linewidth',2);hold on
+ contourf(P2,P3,PP2,'LevelList',[-2.99],'Linewidth',2);hold on
  plot(p3,p1,'go','MarkerFaceColor','g')
  axis image
  xlabel("p3");
@@ -228,7 +228,7 @@ for i = 1:length(P2)
 end
 PP3 = -PP3 - LLmaxa;
 subplot(1,3,3)
-contourf(P2,P3,PP3,'LevelList',[-3.00],'Linewidth',2);hold on
+contourf(P2,P3,PP3,'LevelList',[-2.99],'Linewidth',2);hold on
 plot(p3,p2,'go','MarkerFaceColor','g')
 axis image
 xlabel("p3");
@@ -251,7 +251,7 @@ end
 PP1 = -PP1 - LLmaxe;
 figure;
 subplot(1,3,1)
-contourf(P1,P2,PP1,'LevelList',[-3.00],'Linewidth',2);hold on
+contourf(P1,P2,PP1,'LevelList',[-2.99],'Linewidth',2);hold on
 plot(p2,p1,'ro','MarkerFaceColor','r')
 axis image
 xlabel("p2");
@@ -274,7 +274,7 @@ ylabel("p1");
  end
  PP2 = -PP2 - LLmaxe;
  subplot(1,3,2)
- contourf(P2,P3,PP2,'LevelList',[-3.00],'Linewidth',2);hold on
+ contourf(P2,P3,PP2,'LevelList',[-2.99],'Linewidth',2);hold on
  plot(p3,p1,'ro','MarkerFaceColor','r')
  axis image
  xlabel("p3");
@@ -297,7 +297,7 @@ for i = 1:length(P2)
 end
 PP3 = -PP3 - LLmaxe;
 subplot(1,3,3)
-contourf(P2,P3,PP3,'LevelList',[-3.00],'Linewidth',2);hold on
+contourf(P2,P3,PP3,'LevelList',[-2.99],'Linewidth',2);hold on
 plot(p3,p2,'go','MarkerFaceColor','r')
 axis image
 xlabel("p3");
